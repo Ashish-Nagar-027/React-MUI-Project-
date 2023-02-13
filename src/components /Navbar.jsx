@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <StyledToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
           MUI Dev
@@ -60,7 +60,7 @@ const Navbar = () => {
           <Badge badgeContent={4} color="error">
             <Notifications />
           </Badge>
-          <Avatar onClick={(e) => setCloseMenu(true)} alt="Cindy Baker" src="/static/images/avatar/3.jpg" sx={{ height:'30', width:'30' }} />
+          <Avatar onClick={(e) => setCloseMenu(true)} alt="Cindy Baker" src="https://mui.com/static/images/avatar/3.jpg" sx={{ height:'30', width:'30' }} />
         </Icons>
         <UserBox onClick={(e) => setCloseMenu(true)}>
         <Avatar  alt="Cindy Baker" src="/static/images/avatar/3.jpg" sx={{ height:'30', width:'30' }} />
