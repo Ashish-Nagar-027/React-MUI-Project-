@@ -44,14 +44,14 @@ const Navbar = () => {
 
 
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" >
       <StyledToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
           MUI Dev
         </Typography>
         <WhatshotIcon sx={{ display: { xs: "block", sm: "none" } }} />
-        <SearchBox>
-          <InputBase placeholder="Search here..." />
+        <SearchBox >
+          <InputBase sx={{color:'grey'}} placeholder="Search here..." />
         </SearchBox>
         <Icons>
           <Badge badgeContent={4} color="error" >

@@ -44,7 +44,8 @@ const AddPostIcon = () => {
           width={400}
           height={280}
           borderRadius={5}
-          bgcolor="white"
+          bgcolor={'background.default'}
+           color={'text.primary'}
         >
           <Typography
             id="modal-modal-title"

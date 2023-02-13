@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 import React from 'react'
 
-const Sidebar = () => {
+const Sidebar = ({theme, setTheme}) => {
 
   const [Icons] = useState([
     {
@@ -55,7 +55,7 @@ const Sidebar = () => {
               <ListItemIcon>
                 <Brightness6Icon />
               </ListItemIcon>
-              <Switch />
+              <Switch onChange={(e) => setTheme(theme === 'dark' ? 'light' : 'dark')} />
             </ListItemButton>
           </ListItem>
         </List>
